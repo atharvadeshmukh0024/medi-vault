@@ -37,4 +37,43 @@
 
 ---
 
-## 📷 Screenshots
+## 🔗 Live Demo
+
+**🧪 Try it out here:**  
+👉 [MediVault Live App](http://medivault-frontend11.s3-website.ap-south-1.amazonaws.com/)
+
+---
+
+## 🔐 Login Instructions
+
+> **📢 Note:** You must create a new account to use MediVault. This ensures secure, personalized access.
+
+1. Go to the [Live App](http://medivault-frontend11.s3-website.ap-south-1.amazonaws.com/)
+2. Click on **Sign Up**
+3. Enter your email and password (valid email required)
+4. Enter the **confirmation code** sent to your email
+5. Login using your credentials
+
+---
+
+## 💡 Use Case: Why MediVault?
+
+Managing medical records across clinics and hospitals is a hassle. MediVault solves this by:
+
+- 📂 Letting users upload medical reports (PDFs/images) in a secure, encrypted cloud space
+- 🔎 Making it easy to search and filter reports by **type**, **doctor**, or **date**
+- 📅 Helping users track **appointments**
+- 📬 Ensuring your reports are **accessible anywhere**, even if you switch hospitals or doctors
+
+---
+
+## 🚀 Features
+
+- ✅ Secure **User Authentication** via Amazon Cognito
+- 📁 Upload & Store reports securely in **Amazon S3**
+- 🔍 Filter/Search your reports easily
+- 📅 Schedule and view appointments
+- 🛡️ Automatic **token expiry detection** and **logout**
+- ⚙️ Serverless architecture using **AWS Lambda** & **DynamoDB**
+
+---
