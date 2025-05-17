@@ -1,0 +1,89 @@
+/* src/styles/auth.css */
+
+.auth-container {
+  max-width: 600px; /* Increased width */
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+  /* Force consistent height for both forms */
+  min-height: 460px; /* Adjust if needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  background: #f3f4f6;
+  color: #333;
+  font-weight: bold;
+  border-radius: 20px 20px 0 0;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  color: white;
+}
+
+.form-container {
+  margin-top: 20px;
+  flex-grow: 1; /* So it fills remaining container space */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  height: 100%; /* Fill container height */
+  justify-content: space-between; /* Space out form fields and footer */
+}
+
+.input-field {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+.form-button {
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.form-button:hover {
+  background: linear-gradient(45deg, #00d4ff, #007bff);
+}
+
+.form-links {
+  font-size: 14px;
+}
+
+.form-footer {
+  font-size: 14px;
+  text-align: center;
+}

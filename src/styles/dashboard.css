@@ -1,0 +1,277 @@
+/* src/styles/dashboard.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9faff;
+  color: #1f2937;
+  margin: 0;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9faff;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 0 16px 16px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cce5ff;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-left: 4px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  color: #fff;
+  border-left-color: #00d4ff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 40px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+/* Welcome Section */
+.welcome-section h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.welcome-section small {
+  color: #6b7280;
+}
+
+.welcome-section p {
+  margin-top: 8px;
+  font-style: italic;
+  color: #6b7280;
+}
+
+/* Notifications */
+.notifications {
+  margin: 24px 0;
+  padding: 16px 20px;
+  background-color: #fff3cd;
+  border-radius: 12px;
+  color: #856404;
+  font-weight: 600;
+}
+
+/* Reports Section */
+.reports-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.reports-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.reports-controls input[type="text"],
+.reports-controls select {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  flex: 1;
+  min-width: 180px;
+  transition: all 0.3s ease;
+}
+
+.reports-controls input:focus,
+.reports-controls select:focus {
+  border-color: #00d4ff;
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+  outline: none;
+}
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.report-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.report-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.report-card p {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Upload Section */
+.upload-section {
+  margin-bottom: 48px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 480px;
+  margin-top: 40px;
+}
+
+.upload-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.upload-form input[type="file"] {
+  cursor: pointer;
+}
+
+.upload-form input[type="text"],
+.upload-form input[type="date"] {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upload-form input:focus {
+  border-color: #00d4ff;
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.15);
+  outline: none;
+}
+
+.upload-button {
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-button:hover {
+  background: linear-gradient(45deg, #00d4ff, #007bff);
+}
+
+.upload-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Appointments Section */
+.appointments-section {
+  margin-top: 40px;
+}
+
+.appointments-section h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.appointments-list {
+  list-style: none;
+  padding: 0;
+}
+
+.appointments-list li {
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+}
+
+/* Security & Privacy */
+.security-notice {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 60px;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    border-radius: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .reports-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upload-section {
+    max-width: 100%;
+  }
+}
