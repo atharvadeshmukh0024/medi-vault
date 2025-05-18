@@ -26,14 +26,25 @@
 
 ---
 
-## 🛠️ Tech Stack
+## 📸 Screenshots
 
-| Frontend | Backend | Cloud Services |
-|----------|---------|----------------|
-| React.js | Node.js (Lambda) | AWS S3 |
-| CSS      | Express-style handlers | DynamoDB |
-| React Router | REST API | Cognito |
-| aws-amplify | Fetch API | API Gateway |
+### 👋 Welcome Page
+![Welcome Page](Screenshots/WelcomePage.png)
+
+### 🔐 Login Page
+![Login Page](Screenshots/LoginPage.png)
+
+### 🆕 Signup Page
+![Signup Page](Screenshots/SignUpPage.png)
+
+### 📤 Upload Report
+![Upload Report](Screenshots/UploadReport.png)
+
+### ✅ Report Uploaded
+![Report Uploaded](Screenshots/ReportUploaded.png)
+
+### 📅 Schedule Appointment
+![Schedule Appointment](Screenshots/ScheduleAppointment.png)
 
 ---
 
@@ -64,6 +75,17 @@ Managing medical records across clinics and hospitals is a hassle. MediVault sol
 - 🔎 Making it easy to search and filter reports by **type**, **doctor**, or **date**
 - 📅 Helping users track **appointments**
 - 📬 Ensuring your reports are **accessible anywhere**, even if you switch hospitals or doctors
+
+---
+
+## 🛠️ Tech Stack
+
+| Frontend | Backend | Cloud Services |
+|----------|---------|----------------|
+| React.js | Node.js (Lambda) | AWS S3 |
+| CSS      | Express-style handlers | DynamoDB |
+| React Router | REST API | Cognito |
+| aws-amplify | Fetch API | API Gateway |
 
 ---
 
